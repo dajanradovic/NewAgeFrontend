@@ -4,7 +4,10 @@ import axios from 'axios';
 export const fetchAlcoholicDrinks = (n) =>{
     return (dispatch) => {
 
-        axios.get('http://104.248.26.222:4000/api/alcoholicDrinks')
+        axios.get('http://newagebackend.xyz/api/alcoholicDrinks',{
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+          }})
             .then(response => {
 
                   console.log(response.data);

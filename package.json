@@ -1,5 +1,6 @@
 {
   "name": "new-age-frontend",
+  "homepage" : "http://newage.apartments-radovic.website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

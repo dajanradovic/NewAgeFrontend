@@ -16,19 +16,19 @@ class DajanHeader extends React.Component {
 goToGoogleAuth = ()=>{
 
 
-  window.open("http://104.248.26.222:4000/auth/google","_self");
+  window.open("http://newagebackend.xyz/auth/google","_self");
 
 }
 
 logOut = ()=>{
-  axios.get('http://104.248.26.222:4000/auth/logout', {
+  axios.get('http://newagebackend.xyz/auth/logout', {
     headers: {'Authorization': 'Bearer '+localStorage.getItem('token')}
   
 }).then(response =>{
       localStorage.removeItem('token');
       this.props.loggedOut();
 
-       window.open("http://localhost:3000","_self");
+       window.open("http://newage.apartments-radovic.website","_self");
 })
 .catch(error => {
   console.log(error);
