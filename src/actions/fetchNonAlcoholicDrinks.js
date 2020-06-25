@@ -4,7 +4,7 @@ import axios from 'axios';
 export const fetchNonAlcoholicDrinks = (n) =>{
     return (dispatch) => {
 
-        axios.get('http://localhost:4000/api/nonAlcoholicDrinks')
+        axios.get('http://104.248.26.222:4000/api/nonAlcoholicDrinks')
             .then(response => {
 
                   console.log(response.data);

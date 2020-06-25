@@ -41,7 +41,7 @@ completeOrder = () =>{
   }
   
   
-  axios.post('http://localhost:4000/api/completeOrder', body, {
+  axios.post('http://104.248.26.222:4000/api/completeOrder', body, {
     headers: headers
    
 }

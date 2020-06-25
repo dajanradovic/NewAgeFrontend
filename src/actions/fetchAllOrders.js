@@ -4,7 +4,7 @@ import axios from 'axios';
 export const fetchAllOrders = (token) =>{
     return (dispatch) => {
         console.log(localStorage.getItem('token'));
-        axios.get('http://localhost:4000/api/getAllOrders',{
+        axios.get('http://104.248.26.222:4000/api/getAllOrders',{
                 headers: {'Authorization': 'Bearer '+localStorage.getItem('token')}
 
 

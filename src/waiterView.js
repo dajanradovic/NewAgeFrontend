@@ -7,7 +7,7 @@ import OrderModal from './orderModal';
 import {fetchAllOrders} from './actions/fetchAllOrders';
 import openSocket from 'socket.io-client';
 
-const socket = openSocket('http://127.0.0.1:4000');
+const socket = openSocket('http://104.248.26.222:4000');
 
 
 

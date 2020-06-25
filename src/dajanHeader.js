@@ -16,12 +16,12 @@ class DajanHeader extends React.Component {
 goToGoogleAuth = ()=>{
 
 
-  window.open("http://localhost:4000/auth/google","_self");
+  window.open("http://104.248.26.222:4000/auth/google","_self");
 
 }
 
 logOut = ()=>{
-  axios.get('http://localhost:4000/auth/logout', {
+  axios.get('http://104.248.26.222:4000/auth/logout', {
     headers: {'Authorization': 'Bearer '+localStorage.getItem('token')}
   
 }).then(response =>{

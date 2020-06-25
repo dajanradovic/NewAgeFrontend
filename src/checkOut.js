@@ -35,7 +35,7 @@ confirmOrder = () => {
 
     else{
     
-  axios.post('http://localhost:4000/api/newOrder', {
+  axios.post('http://104.248.26.222:4000/api/newOrder', {
     contents: this.props.activeOrder,
     price: this.props.total,
     email:this.state.email,

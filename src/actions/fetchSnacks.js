@@ -4,7 +4,7 @@ import axios from 'axios';
 export const fetchSnacks = (n) =>{
     return (dispatch) => {
 
-        axios.get('http://localhost:4000/api/snacks')
+        axios.get('http://104.248.26.222:4000/api/snacks')
             .then(response => {
 
                   console.log(response.data);
